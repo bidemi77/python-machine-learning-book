@@ -1,0 +1,31 @@
+# Frequency To Name 
+
+freq_range1 = 3 * (10**9)
+freq_range2 = 3 * (10**12)
+freq_range3 = 4.3 * (10**14)
+freq_range4 = 7.5 * (10**14)
+freq_range5 = 3 * (10**17)
+freq_range6 = 3 * (10**19)
+freq_range7 = 3 * (10**19)
+
+freq_range = float(input("Enter the frequency range here: "))
+
+if (freq_range  > freq_range1):
+	name = "Radio Waves"
+elif (freq_range == freq_range1) or (freq_range < freq_range2):
+    name = "Microwaves"
+elif (freq_range == freq_range2) or (freq_range < freq_range3):
+    name = "Infrared Light"
+elif (freq_range == freq_range3) or (freq_range < freq_range4):
+    name = "Visible light"
+elif (freq_range == freq_range4) or (freq_range < freq_range5):
+    name = "Ultraviolet light"
+elif (freq_range == freq_range5) or (freq_range < freq_range6):
+	name = "X-rays"
+elif (freq_range > freq_range):
+	name = "Gamma rays"
+else:
+	pass
+
+print("The frequency range is:",freq_range, "and the name is:",name)
+
